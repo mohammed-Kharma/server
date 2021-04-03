@@ -1,0 +1,43 @@
+@media(max-width:575.98px){
+    main{
+        display: block;
+    }
+    main div{
+        width: 100% !important;
+    }
+    main .left .logo .mnues{
+        display: block;
+    }
+    main .left {
+        min-height: 50px !important;
+        /* display: none; */
+    }
+    .button .button{
+        width: 100%;
+        display: block;
+    }
+    main .left .list{
+        display: none;
+    }
+}
+@media(min-width:576px) and (max-width:767.98px){
+    main{
+        display: block;
+    }
+    main div{
+        width: 100% !important;
+    }
+    main .left .logo .mnues{
+        display: block;
+    }
+    main .left {
+        min-height: 50px !important;
+    }
+    main .left .list{
+        display: none;
+    }
+
+}
+@media(min-width:768px) and (max-width:991.98px){
+
+}

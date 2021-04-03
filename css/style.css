@@ -1,0 +1,265 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+body,html{
+    width: 100%;
+}
+.home{
+    width: 100%;
+}
+main{
+    display: flex;
+    /* justify-content: space-between; */
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(#211be2,#4a75d3);
+}
+main .left{
+    width: 30%;
+    min-height: 100vh;
+    /* background: #211be2; */
+    padding: 20px;
+    /* position: fixed;
+    top: 0;left: 0; */
+    border-right: 2px solid #fff;
+
+}
+main .right{
+    width: 70%;
+    min-height: 100vh;
+}
+main .left .logo{
+    font-family: sans-serif;
+    text-transform: capitalize;
+    color: #fff;
+    word-spacing: 1.5px;
+    width: 100%;
+    height: 100px;
+    border-bottom: 2px solid #fff;
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+}
+main .left .logo .mnues{
+    font-size: 27px;
+    cursor: pointer;
+    display: none;
+}
+main .left .list ul{
+    margin-top: 10px;
+    list-style: none;
+}
+main .left .list ul li{
+    padding: 20px 0px;
+    width: 100%;
+    height: 50px;
+    /* background: red; */
+    margin-top: 2px;
+    transition: all 2s;
+    cursor: pointer;
+    border-radius: 12px;
+    padding: 5px;
+}
+main .left .list ul li:hover{
+    background-color: #48dbfb;
+}
+main .left .list ul li a{
+    color: #fff;
+    font-family: sans-serif;
+    text-transform: capitalize;
+    margin-left: 10px;
+}
+main .left .list ul li i{
+    color: #fff;
+}
+main .left .list hr{
+    background: #fff;
+    /* height: 3px; */
+}
+.head{
+    width: 100%;
+    height: 70px;
+    /* background:#90c9e6; */
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    
+}
+.art-head{
+    display: flex;
+}
+.art-head ul{
+    margin-right: 15px;
+    list-style: none;
+}
+.art-head ul li{
+    font-family: sans-serif;
+    text-transform: capitalize;
+    margin-right: 20px;
+    
+}
+.art-head ul li a{
+    color: #fff;
+}
+.art-head div i{
+    margin-left: 7px;
+    color: #fff;
+    font-size: 25px;
+    cursor: pointer;
+}
+.art-head ul li ul{
+    display: none;
+    background: #fff;
+    margin-top: 27px;
+    width: 150px;
+    min-height: 50px;
+     /* padding:5px 0px;  */
+     transition: all 1s;
+}
+.art-head ul li ul li{
+    height: 40px;
+    cursor: pointer;
+}
+.art-head ul li ul li:hover{
+    background: blue;
+    /* color: #fff; */
+}
+.art-head ul li:hover ul li{
+    display: block;
+}
+/* log-in */
+.log-in{
+    width: 100%;
+    min-height: 400px;
+    padding: 20px;
+}
+.log-content h3{
+    color: #211be2;
+    font-family: sans-serif;
+    text-transform: capitalize;
+    word-spacing: 1.5px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+.log-content form{
+    width: 100%;
+    background-color: #fff;
+    min-height: 400px;
+    padding: 20px;
+    /* padding-top: 30%; */
+}
+.log-content form .input{
+    width: 100%;
+    height: 40px;
+    margin-top: 10px;
+    padding: 5px;
+}
+.log-content form .button{
+    margin-top: 10px;
+}
+.log-content form .button button{
+    text-transform: capitalize;
+    font-family: sans-serif;
+    font-weight: bold;
+    width: 100%;
+    margin-top: 10px;
+}
+/* end log-in */
+/* tabs */
+.tabs{
+    width: 100%;
+    min-height: 300px;
+    /* background-color: #fff; */
+    padding: 15px;
+    margin-top: 20px;
+}
+.tabs-content .row{
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 12px;
+}
+.all-head h2{
+    font-family: sans-serif;
+    text-transform: capitalize;
+    color: #fff;
+    word-spacing: 1.5px;
+    letter-spacing: 1.2px;
+    
+}
+.all-head p{
+    color: #eee;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* service */
+.service{
+    width: 100%;
+    min-height: 400px;
+    padding: 20px;
+}
+.ser-div h3 {
+    color: #fff;
+    font-family: sans-serif;
+    margin-top: 40px;
+}
+.ser-div p{
+    color: #eee;
+    line-height: 1.8;
+    margin: 20px auto;
+}
+/* strad page arbic */
+.arbic{
+    direction: rtl;
+}
+@font-face{
+    src: url(../font/static/Changa-ExtraBold.ttf);
+    font-family: mohammed;
+}
+
+.loader_bg{
+    position: fixed;
+    background-color:#211be2;
+    z-index: 20;
+    width: 100%;
+    height: 100vh;
+}
+.loader{
+    border: 0 solid transparent;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: calc(50vh - 75px);
+    left: calc(50vw - 75px);
+}
+.loader::before, .loader::after{
+    content: "";
+    border: 1em solid white;
+    border-radius: 50%;
+    width: inherit;
+    height: inherit;
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: loder 2s linear infinite;
+    opacity: 0;
+
+}
+.loader::before{
+    animation-delay: .5s;
+}
+@keyframes loder{
+    0%{
+        transform: scale(0);
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        transform: scale(1);
+        opacity: 0;
+    }
+}
